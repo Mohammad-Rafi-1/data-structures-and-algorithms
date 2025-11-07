@@ -88,6 +88,26 @@ class binarysearchtree{
      };
 
 
+     void search(Node* root,int value){
+        if(root==nullptr){
+            cout<<"element not found \n";
+        }
+        else{
+            if(root->data>value){
+
+                search(root->left,value);
+
+            }
+            else if(root->data<value){
+                search(root->right,value);
+            }
+            else{
+                cout<<"element found "<<root->data<<"\n";
+            }
+        }
+     };
+
+
      
 
 
@@ -119,4 +139,6 @@ int main(){
     cout<<"delete element \n";
     root=bst.delete_ele(root,0);
     bst.traverse(root);
+    bst.search(root,1000);
+
 }
