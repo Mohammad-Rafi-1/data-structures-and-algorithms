@@ -253,10 +253,4 @@ int main(){
     bst.traverse(root);
     bst.search(root,100);
 
-<<<<<<< HEAD
-=======
-    
->>>>>>> 50fd63a (Added avl tree)
-
-
 }
