@@ -106,11 +106,7 @@ class binarysearchtree{
             }
         }
      };
-
-
      
-
-
 
      void traverse(Node* root){
         if (root!=nullptr){
